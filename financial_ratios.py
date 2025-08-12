@@ -95,7 +95,7 @@ def create_metric_card(title, value, change=None, change_pct=None, icon="📊"):
 # Load financial data
 @st.cache_data
 def load_financial_data():
-    file_path = r'C:\Users\Lenovo\Desktop\financial ratio db\financials_cleaned for plots.csv'
+    file_path = 'data/financials_cleaned_for_plots.csv'
     try:
         data = pd.read_csv(file_path)
         data['Date'] = pd.to_datetime(data['Date'])
@@ -108,7 +108,8 @@ def load_financial_data():
 # Load commodities data
 @st.cache_data
 def load_commodities_data():
-    file_path = r'C:\Users\Lenovo\Desktop\financial ratio db\commodities.csv'
+    file_path = 'data/commodities.csv'
+
     try:
         data = pd.read_csv(file_path)
         data['Date'] = pd.to_datetime(data['Date'])
@@ -127,7 +128,8 @@ def load_commodities_data():
 # Load sentiment data
 @st.cache_data
 def load_sentiment_data():
-    file_path = r'C:\Users\Lenovo\Desktop\financial ratio db\senti.csv'
+    file_path = 'data/senti.csv'
+
     try:
         data = pd.read_csv(file_path)
         if 'date' in data.columns:

@@ -100,7 +100,7 @@ export default function FHIDeepDivePage() {
 
       <SectionHeader title="Stationarity Test Results" />
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <div className="card-dashboard" style={{ borderTop: `3px solid ${COLORS.red}` }}>
+        <div className="card-dashboard flex flex-col items-center text-center" style={{ borderTop: `3px solid ${COLORS.red}` }}>
           <div className="card-title-label">ADF Test — fhi_log (raw)</div>
           <div className="font-mono text-sm mt-3 leading-8">
             <span className="text-muted-foreground">Statistic:</span> <span className="text-foreground">-0.98</span><br />
@@ -108,7 +108,7 @@ export default function FHIDeepDivePage() {
             <span className="text-muted-foreground">Result:</span> <span className="text-destructive">NOT stationary</span>
           </div>
         </div>
-        <div className="card-dashboard" style={{ borderTop: `3px solid ${COLORS.green}` }}>
+        <div className="card-dashboard flex flex-col items-center text-center" style={{ borderTop: `3px solid ${COLORS.green}` }}>
           <div className="card-title-label">ADF Test — fhi_log_diff (after differencing)</div>
           <div className="font-mono text-sm mt-3 leading-8">
             <span className="text-muted-foreground">Statistic:</span> <span className="text-foreground">-11.42</span><br />

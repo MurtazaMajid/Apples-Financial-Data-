@@ -39,19 +39,15 @@ export default function ModelForecastPage() {
         {modelResults.map((m) => (
           <div
             key={m.model + m.features}
-            className="card-dashboard animate-fade-in"
+            className="card-dashboard animate-fade-in flex flex-col items-center text-center"
             style={{ borderTop: `3px solid ${colorMap[m.color]}` }}
           >
-            <div className="flex justify-between items-start mb-2">
-              <div>
-                <div className="card-title-label">{m.model}</div>
-                <div className="text-xs text-muted-foreground">{m.features}</div>
-              </div>
-              <span className={`pill-${m.color === "success" ? "green" : m.color === "primary" ? "blue" : m.color === "warning" ? "yellow" : "blue"}`}>
-                RMSE {m.rmse.toFixed(4)}
-              </span>
-            </div>
-            <div className="font-mono text-xs text-muted-foreground mt-3">{m.params}</div>
+            <div className="card-title-label">{m.model}</div>
+            <div className="text-xs text-muted-foreground mb-2">{m.features}</div>
+            <span className={`pill-${m.color === "success" ? "green" : m.color === "primary" ? "blue" : m.color === "warning" ? "yellow" : "blue"} mb-2`}>
+              RMSE {m.rmse.toFixed(4)}
+            </span>
+            <div className="font-mono text-xs text-muted-foreground mt-1">{m.params}</div>
             <div className="text-xs text-muted-foreground mt-1">{m.note}</div>
           </div>
         ))}

@@ -147,7 +147,7 @@ export default function OverviewPage() {
         {modelResults.map((m) => (
           <div
             key={m.model + m.features}
-            className="card-dashboard animate-fade-in"
+            className="card-dashboard animate-fade-in flex flex-col items-center justify-center text-center"
             style={{ borderTop: `3px solid ${colorMap[m.color] || COLORS.muted}` }}
           >
             <div className="card-title-label">{m.model}</div>

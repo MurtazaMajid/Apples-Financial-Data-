@@ -96,10 +96,20 @@
     box-shadow: 0 0 20px hsla(212, 100%, 67%, 0.03);
   }
   .card-title-label {
-    @apply text-[11px] uppercase tracking-[1.5px] text-muted-foreground mb-2;
+    @apply text-[11px] uppercase tracking-[1.5px] text-muted-foreground mb-2 w-full text-center;
+    min-height: 2.4em;
+    line-height: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .card-value {
-    @apply font-mono text-[28px] font-semibold text-foreground leading-none;
+    @apply font-mono text-[28px] font-semibold text-foreground w-full text-center;
+    line-height: 1;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .section-header {
     @apply text-lg font-semibold text-foreground mt-6 mb-4 pb-2 border-b border-border;

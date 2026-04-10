@@ -13,7 +13,7 @@
 <br/>
 
 [![Live API](https://img.shields.io/badge/Live_API-HuggingFace_Spaces-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://murtazamajid-apples-fhi-forecasting-analysis.hf.space/predict)
-[![Web App](https://img.shields.io/badge/Web_App-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com)
+[![Web App](https://img.shields.io/badge/Web_App-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://apple-fhi-forecasting-with-arima-lstm.vercel.app)
 [![Notebook](https://img.shields.io/badge/Notebook-Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com)
 [![Status](https://img.shields.io/badge/Status-Complete_and_Deployed-brightgreen?style=for-the-badge)]()
 [![License](https://img.shields.io/badge/License-Educational-4B89DC?style=for-the-badge)]()

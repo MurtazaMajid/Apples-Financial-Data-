@@ -8,9 +8,7 @@
 
 <br/>
 
-> Built a composite financial health score from scratch across 7 data sources, forecasted it with 4 production-grade models, deployed a live REST API on HuggingFace Spaces, and shipped a full-stack interactive web application on Vercel — with complete protection against data leakage at every stage of the pipeline.
-
-**TL;DR** — Built a Financial Health Index for Apple from 7 data sources, forecast it with ARIMAX and LSTM (ratios-only and all-features), deployed all 4 models behind a live API + web app. Finding: Apple's own ratios beat the kitchen-sink feature set in both model families. Honest benchmark: ARIMAX ratios-only at RMSE 0.0971.
+> Built a Financial Health Index for Apple Inc. from 7 data sources, engineered a composite score from scratch, and forecasted it using four production-grade models (ARIMAX and LSTM across ratios-only and full feature sets). Deployed all models behind a live REST API on Hugging Face Spaces and shipped a full-stack interactive web app on Vercel, ensuring strict data leakage prevention throughout the pipeline. Key finding: Apple’s own financial ratios consistently outperformed the full feature set across both model families, with the best benchmark achieved by ARIMAX (ratios-only) at an RMSE of 0.0971.
 
 <br/>
 

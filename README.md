@@ -10,13 +10,15 @@
 
 > Built a composite financial health score from scratch across 7 data sources, forecasted it with 4 production-grade models, deployed a live REST API on HuggingFace Spaces, and shipped a full-stack interactive web application on Vercel — with complete protection against data leakage at every stage of the pipeline.
 
+**TL;DR** — Built a Financial Health Index for Apple from 7 data sources, forecast it with ARIMAX and LSTM (ratios-only and all-features), deployed all 4 models behind a live API + web app. Finding: Apple's own ratios beat the kitchen-sink feature set in both model families. Honest benchmark: ARIMAX ratios-only at RMSE 0.0971.
+
 <br/>
 
 [![Live API](https://img.shields.io/badge/Live_API-HuggingFace_Spaces-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://murtazamajid-apples-fhi-forecasting-analysis.hf.space/predict)
 [![Web App](https://img.shields.io/badge/Web_App-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://apple-fhi-forecasting-with-arima-lstm.vercel.app)
-[![Notebook](https://img.shields.io/badge/Notebook-Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MurtazaMajid/Apple-FHI-Forecasting-with-ARIMA-LSTM/blob/main/Notebook/APPLE_FHI_SUBMISSION.ipynb)
 [![Status](https://img.shields.io/badge/Status-Complete_and_Deployed-brightgreen?style=for-the-badge)]()
-[![License](https://img.shields.io/badge/License-Educational-4B89DC?style=for-the-badge)]()
+[![License](https://img.shields.io/badge/License-MIT-4B89DC?style=for-the-badge)](LICENSE)
 
 <br/>
 
@@ -35,6 +37,10 @@
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=flat-square&logo=jupyter&logoColor=white)](https://jupyter.org)
 
 </div>
+
+---
+
+![Apple FHI Forecasting Dashboard](Images/dashboard_screenshot.png)
 
 ---
 
@@ -210,9 +216,10 @@ The ARIMAX ratios-only result of 0.0971 is treated as the primary trustworthy be
 ## Project Structure
 
 ```
-Apple-FHI-Forecasting-with-ARIMA-and-LSTM/
+Apple-FHI-Forecasting-with-ARIMA-LSTM/
 |
 |-- README.md
+|-- LICENSE
 |-- requirements.txt
 |
 |-- Data/
@@ -225,6 +232,7 @@ Apple-FHI-Forecasting-with-ARIMA-and-LSTM/
 |   `-- nyt_apple_related_news.csv              (1,069 articles, FinBERT-scored)
 |
 |-- Images/
+|   |-- dashboard_screenshot.png
 |   |-- Apples_financial_ratios_over_time_2010_-_2025.png
 |   |-- Macro_and_commodity_indicators_over_time_2010_-_2025.png
 |   |-- Apples_Financial_Health_Index_over_time_2010_-_2025_.png
@@ -660,8 +668,8 @@ The FinBERT step in Section 7 takes approximately 5 minutes on GPU and 20 minute
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/Apple-FHI-Forecasting-with-ARIMA-and-LSTM.git
-cd Apple-FHI-Forecasting-with-ARIMA-and-LSTM
+git clone https://github.com/MurtazaMajid/Apple-FHI-Forecasting-with-ARIMA-LSTM.git
+cd Apple-FHI-Forecasting-with-ARIMA-LSTM
 
 # Install all dependencies
 pip install -r requirements.txt
@@ -824,7 +832,7 @@ Lundberg, S. M. and Lee, S.-I. (2017). A Unified Approach to Interpreting Model 
 
 ## License
 
-This project was built for learning and portfolio purposes and is not intended for commercial use.
+Released under the [MIT License](LICENSE). Built for learning and portfolio purposes.
 
 Financial data sourced from [Macrotrends](https://www.macrotrends.net) and the [Federal Reserve Economic Data (FRED)](https://fred.stlouisfed.org) maintained by the Federal Reserve Bank of St. Louis. News data collected via the [New York Times Article Search API](https://developer.nytimes.com). Sentiment scoring performed using [ProsusAI/finbert](https://huggingface.co/ProsusAI/finbert) available on HuggingFace.
 
